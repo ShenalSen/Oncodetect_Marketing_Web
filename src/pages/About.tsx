@@ -78,19 +78,19 @@ const About = () => {
                 name: 'Nethmi Wickramsinghe',
                 role: 'Frontend Developer | UI/UX Designer | TL ',
                 image:
-                  'Nethmi.jpg',
+                  '/Nethmi.jpg',
               },
               {
                 name: 'Manumi Saputantri',
                 role: 'Frontend Developer | UI/UX Designer',
                 image:
-                  'Manumi.jpg',
+                  '/Manumi.jpg',
               },
               {
                 name: 'Tavishi Balachandra',
                 role: 'Head of Research | Frontend Developer | Devops',
                 image:
-                  'Tavishi.jpg',
+                  '/Tavishi.jpg',
               },
             ].map((member, index) => (
               <ScrollAnimation key={index}>
