@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,18 +10,18 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-  <Router basename="/Oncodetect_Marketing_Web">  //added router component and wrapped the entire app in it
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/community" element={<Community />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </div>
-  </Router>
+  
+  <div className="min-h-screen bg-white">
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/community" element={<Community />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+    <Footer />
+  </div>
+  
   );
 }
 
